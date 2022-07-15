@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+#background-image{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+header{
+    position: sticky;
+    width: calc(100% - 6em);
+    top: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 -1px 0 2px #FBC628;
+    padding: 1.5em 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ol{
+    display: inline-flex;
+    gap: 1em;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#intro{
+    height: 80%;
+    padding: 1.5em 3em;
+    margin-top: 5em;
+}
+
+button{
+    background-color: #FBC628;
+    padding: 1em;
+    outline: none;
+    border: none;
+}
+
+#youtube{
+    width: 100%;
+    margin-bottom: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+iframe{
+    margin: 0 auto;
+}
+
+#map{
+    position: absolute;
+    width: 50ch;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    display: flex;
+    flex-direction: column; 
+    gap: 2em; 
+}
+
+form{
+    max-width: 80%;
+    position: relative;
+    text-align: left;
+    display: flex;
+    transform: translateY(-10%);
+    flex-direction: column; 
+    gap: 2em; 
+}
+
+input, textarea{
+    width: 100%;
+    border: none;
+    box-shadow: 0 2px 0 -1px#FBC628;
+    outline: none;
+}
+
+
+section{
+    position: absolute;
+    left: 0;
+    width: calc(100% - 5em);
+    padding: 1.5em 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+section > div{
+    position: relative;
+    width: 30%;
+}
+
+section > div > *{
+    width: 100%;
+    height: 100%;
+}
+
+#title{
+    padding: 0 3em;
+}
+
+#contact-forms{
+    position: relative;
+    padding: 1.5em 3em;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+#contact-forms > div{
+    max-width: 100%;
+    position: relative;
+    text-align: center;
+}
