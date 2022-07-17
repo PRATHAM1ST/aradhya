@@ -106,7 +106,7 @@ input, textarea{
     width: 100%;
     border: none;
     box-shadow: 0 2px 0 -1px#FBC628;
-    /* outline: none; */
+    outline: none;
 }
 
 
