@@ -1,154 +1,77 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  outline: none;
+  border: none;
+  overflow-x: hidden;
+  text-decoration: none;
+  color: black;
+  list-style: none;
+  flex-wrap: wrap;
 }
-
-body{
-    width: 100vw;
-    overflow-x: hidden;
-}
-
-#background-image{
-    position: absolute;
-    top: 50%;
-    left: 80%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}
-
+#background-image { left: 80% !important; }
 header{
-    position: sticky;
-    width: calc(100% - 6em);
-    top: 0;
-    left: 0;
     background-color: white;
-    box-shadow: 0 -1px 0 2px #FBC628;
-    padding: 1.5em 3em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+    box-shadow: 0 -1px 0 2px #fbc628;
+    justify-content: space-between !important;
 }
-
-h3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+ol {
+  display: inline-flex;
+  gap: 1em;
 }
-
-ol{
-    display: inline-flex;
-    gap: 1em;
+#intro {
+  height: 80%;
+  margin-top: 5em;
 }
-
-li{
-    list-style: none;
+button {
+  background-color: #fbc628;
+  padding: 1em;
 }
-
-a{
-    text-decoration: none;
-    color: black;
+#youtube {
+  width: 100%;
+  margin-bottom: 5em;
+  flex-direction: column;
 }
-
-a:hover{
-    text-decoration: underline;
+iframe { margin: 0 auto; }
+#map {
+  flex-direction: column;
+  gap: 2em;
 }
-
-#intro{
-    height: 80%;
-    padding: 1.5em 3em;
-    margin-top: 5em;
+form {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
 }
-
-button{
-    background-color: #FBC628;
-    padding: 1em;
-    outline: none;
-    border: none;
+input, textarea {
+  width: 100%;
+  box-shadow: 0 2px 0 -1px #000000;
 }
-
-#youtube{
-    width: 100%;
-    margin-bottom: 5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+section {
+  justify-content: center !important;
+  align-items: flex-start !important;
+  gap: 1em;
 }
-
-iframe{
-    margin: 0 auto;
+section > div { width: 30%; }
+section > div > * {
+  width: 100%;
+  height: 100%;
 }
-
-#map{
-    position: absolute;
-    width: 50ch;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);  
-    display: flex;
-    flex-direction: column; 
-    gap: 2em; 
+.space,header {
+  padding: 1.5em 3em;
+  width: calc(100% - 6em);
 }
-
-form{
-    max-width: 80%;
-    position: relative;
-    text-align: left;
-    display: flex;
-    transform: translateY(-10%);
-    flex-direction: column; 
-    gap: 2em; 
+.flex,header,h3,section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-input, textarea{
-    width: 100%;
-    border: none;
-    box-shadow: 0 2px 0 -1px#FBC628;
-    outline: none;
-}
-
-
-section{
-    position: absolute;
-    left: 0;
-    width: calc(100% - 5em);
-    padding: 1.5em 3em;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 1em;
-}
-
-section > div{
-    position: relative;
-    width: 30%;
-}
-
-section > div > *{
-    width: 100%;
-    height: 100%;
-}
-
-#title{
-    padding: 0 3em;
-}
-
-#contact-forms{
-    position: relative;
-    padding: 1.5em 3em;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3em;
-}
-
-#contact-forms > div{
-    width: 100%;
-    position: relative;
-    text-align: center;
+.center {
+  position: absolute;
+  width: 50ch;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
